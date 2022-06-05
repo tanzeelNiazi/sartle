@@ -1,0 +1,32 @@
+.navbar {
+  justify-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $unit__large;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: $unit__gigantic;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: $unit__huge;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    line-height: 0.8;
+  }
+
+  &__description {
+    margin-left: $unit__gigantic;
+    text-transform: capitalize;
+  }
+}

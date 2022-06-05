@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.grid {
+  display: grid;
+}
+
+.grid__2-cols {
+  grid: 1fr/repeat(2, 1fr);
+}
+
+.grid__3-cols {
+  grid: 1fr/repeat(3, 1fr);
+}
+
+.grid__4-cols {
+  grid: 1fr/repeat(4, 1fr);
+}
+
+.grid__12-cols {
+  grid: 1fr/repeat(12, 1fr);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
 *,
 *::before,
 *::after {
@@ -10,9 +36,45 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 1.6rem;
-  background: palevioletred;
+#root {
+  max-width: 120rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar {
+  justify-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 12.8rem;
+}
+.logo__title {
+  text-transform: uppercase;
+  font-size: 6.4rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  line-height: 0.8;
+}
+.logo__description {
+  margin-left: 12.8rem;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=main.css.map */

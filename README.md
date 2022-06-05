@@ -8,7 +8,7 @@ This is a **README** file of [Sartle Repository](https://github.com/tanzeelNiazi
 - What are some of its features? (Responsiveness)
 - Desktop or Mobile First?
 
-### Website Demo: [Link](http://www.tanzeel.website)
+### Website Demo: [https://tanzeelniazi.github.io/sartle/](https://tanzeelniazi.github.io/sartle/)
 
 # Additional Information
 
