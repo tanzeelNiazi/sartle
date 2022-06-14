@@ -1,0 +1,31 @@
+.section-features {
+  position: relative;
+  margin-top: -$unit__gigantic;
+  padding: $unit__gigantic 0 $unit__large 0;
+  background: rgb(226, 226, 226);
+  z-index: -100;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $unit__large;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+  margin: $unit__large auto;
+  width: 75%;
+}
+
+.icon-desc {
+  text-align: center;
+}

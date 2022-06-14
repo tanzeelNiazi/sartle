@@ -46,6 +46,155 @@ a {
   color: #000000;
 }
 
+.svg-icon {
+  stroke: #000;
+  fill: #000;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.section-features {
+  position: relative;
+  margin-top: -12.8rem;
+  padding: 12.8rem 0 4.8rem 0;
+  background: rgb(226, 226, 226);
+  z-index: -100;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+  margin: 4.8rem auto;
+  width: 75%;
+}
+
+.icon-desc {
+  text-align: center;
+}
+
+.section-featured-posts {
+  width: 100%;
+  height: 120rem;
+  margin: 1.6rem auto;
+  position: relative;
+}
+
+.feature-post {
+  padding: 4.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.feature-post:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+.post__image-container {
+  flex: 0 1 40%;
+}
+.post__image-container .post__image {
+  width: 100%;
+}
+
+.post-desc {
+  flex: 0 1 40%;
+}
+.post-desc__tag {
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.post-desc__title {
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+.post-desc__author {
+  color: #ff6501;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.post-desc__link {
+  margin: 1.6rem auto;
+  text-align: center;
+  display: inline-block;
+  padding: 1.6rem;
+}
+.post-desc__link:link, .post-desc__link:visited {
+  background: #ff6501;
+  color: #ffffff;
+}
+.post-desc__link:hover, .post-desc__link:active {
+  background: #000000;
+}
+
+.text-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.artwork,
+.atrists,
+.place {
+  font-size: 25.6rem;
+  position: absolute;
+  color: rgba(216, 216, 216, 0.3764705882);
+  z-index: -10;
+}
+
+.artwork {
+  top: -5%;
+  right: -25%;
+}
+
+.place {
+  transform: rotateZ(-90deg);
+  top: 60%;
+  left: -20%;
+}
+
+.atrists {
+  transform: rotateZ(90deg);
+  top: 60%;
+  right: -20%;
+}
+
+.feature-posts-container {
+  position: relative;
+  padding: 12.8rem 0;
+  z-index: 5;
+}
+
+.feature-post__title {
+  padding: 1.6rem 0;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 6.4rem;
+  text-align: center;
+}
+
+.section-header {
+  width: inherit;
+  height: 70rem;
+  position: relative;
+  color: #ffffff;
+}
+
 .navbar {
   justify-items: center;
 }
@@ -75,6 +224,105 @@ a {
 .logo__description {
   margin-left: 12.8rem;
   text-transform: capitalize;
+}
+
+.header-bg-01,
+.header-bg-02 {
+  position: absolute;
+  width: 100%;
+  height: 70rem;
+}
+
+.header-bg-01 {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../assets/header-bg-01.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  background-size: 100%;
+  filter: grayscale(1) sepia(0.5);
+  z-index: -5;
+}
+
+.header-bg-02 {
+  background: linear-gradient(90deg, rgba(255, 101, 1, 0.9), rgba(255, 101, 1, 0.6)), url("../assets/header-bg-02.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  background-size: 100%;
+  z-index: -10;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+}
+.nav-link:link, .nav-link:visited {
+  color: #ffffff;
+}
+.nav-link:hover, .nav-link:active {
+  color: #ff6501;
+  transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ff6501;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.hero::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background: #ff6501;
+}
+
+.hero__quote {
+  font-size: 6.4rem;
+  text-align: center;
+}
+
+.quote__text {
+  display: block;
+}
+.quote__text .quote {
+  color: #ff6501;
+}
+
+.hero__cta-link {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1.6rem 4.8rem;
+  transition: all 0.3s;
+}
+.hero__cta-link:link, .hero__cta-link:visited {
+  color: #ffffff;
+  background: #ff6501;
+}
+.hero__cta-link:hover, .hero__cta-link:active {
+  color: #000000;
+  background: #f6f6f6;
 }
 
 /*# sourceMappingURL=main.css.map */

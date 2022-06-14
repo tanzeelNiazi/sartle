@@ -3,5 +3,10 @@
 
 @import "./base/typography";
 @import "./base/reset";
+@import "./base/general";
+
+@import "./componets/features";
+
+@import "./pages/home.scss";
 
 @import "./layout/header";

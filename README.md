@@ -23,7 +23,7 @@ This is a **README** file of [Sartle Repository](https://github.com/tanzeelNiazi
 
 ### Want to Hire Me:
 
-Visit [www.tanzeel.website](http://www.tanzeel.website) or contact me on tanzeel.website@gmail.com for more information.
+Visit [www.tanzeel.website](http://www.tanzeel.website) or contact me on tanzeel.website@gmail.com for more information. Please note that I will not work on projects related to Gambling, Drugs, Pornography & Religion.
 
 ### Technologies I am Proficient In:
 
@@ -41,4 +41,11 @@ Visit [www.tanzeel.website](http://www.tanzeel.website) or contact me on tanzeel
 
 # Acknowledgements:
 
+Following Images/Designs/Icons are used for creation of this website:
+
 - [web-design](https://www.behance.net/gallery/55951025/2017-Web-Design)
+- [living-room](https://www.pexels.com/photo/a-classic-design-of-living-room-2332913/)
+- [cathedral](https://www.pexels.com/photo/carved-spire-and-sculptures-on-marble-facade-of-catholic-cathedral-5407002/)
+- [woman-painting](https://www.pexels.com/photo/photo-of-woman-in-front-of-painting-3547625/)
+- [woman-in-coats](https://www.pexels.com/photo/vintage-photo-of-woman-in-coat-with-hands-in-pockets-8537298/)
+- [blue-building](https://www.pexels.com/photo/15120-architecture-blue-building-269077/)

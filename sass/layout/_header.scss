@@ -1,3 +1,10 @@
+.section-header {
+  width: inherit;
+  height: 70rem;
+  position: relative;
+  color: $color__light;
+}
+
 .navbar {
   justify-items: center;
 }
@@ -28,5 +35,123 @@
   &__description {
     margin-left: $unit__gigantic;
     text-transform: capitalize;
+  }
+}
+
+.header-bg-01,
+.header-bg-02 {
+  position: absolute;
+  width: 100%;
+  height: 70rem;
+}
+
+.header-bg-01 {
+  background: linear-gradient(
+      0,
+      rgba($color__dark, 0.9),
+      rgba($color__dark, 0.6)
+    ),
+    url("../assets/header-bg-01.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  background-size: 100%;
+  filter: grayscale(1) sepia(0.5);
+  z-index: -5;
+}
+
+.header-bg-02 {
+  background: linear-gradient(
+      90deg,
+      rgba($color__primary, 0.9),
+      rgba($color__primary, 0.6)
+    ),
+    url("../assets/header-bg-02.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  background-size: 100%;
+  z-index: -10;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+
+  &:link,
+  &:visited {
+    color: $color__light;
+  }
+
+  &:hover,
+  &:active {
+    color: $color__primary;
+    transition: all 0.3s;
+  }
+}
+
+.nav-link:hover::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: $color__primary;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: $unit__normal;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.hero::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background: $color__primary;
+}
+
+.hero__quote {
+  font-size: $unit__huge;
+  text-align: center;
+}
+
+.quote__text {
+  display: block;
+
+  .quote {
+    color: $color__primary;
+  }
+}
+
+.hero__cta-link {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: $unit__normal $unit__large;
+  transition: all 0.3s;
+
+  &:link,
+  &:visited {
+    color: $color__light;
+    background: $color__primary;
+  }
+
+  &:hover,
+  &:active {
+    color: $color__dark;
+    background: $color__tertiary;
   }
 }
