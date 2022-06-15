@@ -49,3 +49,4 @@ Following Images/Designs/Icons are used for creation of this website:
 - [woman-painting](https://www.pexels.com/photo/photo-of-woman-in-front-of-painting-3547625/)
 - [woman-in-coats](https://www.pexels.com/photo/vintage-photo-of-woman-in-coat-with-hands-in-pockets-8537298/)
 - [blue-building](https://www.pexels.com/photo/15120-architecture-blue-building-269077/)
+- [painting-dome](https://www.pexels.com/photo/nativity-painting-of-people-inside-a-dome-159862/)

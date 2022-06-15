@@ -1,6 +1,6 @@
 .section-header {
   width: inherit;
-  height: 70rem;
+  min-height: 70rem;
   position: relative;
   color: $color__light;
 }
@@ -42,7 +42,7 @@
 .header-bg-02 {
   position: absolute;
   width: 100%;
-  height: 70rem;
+  min-height: 70rem;
 }
 
 .header-bg-01 {
