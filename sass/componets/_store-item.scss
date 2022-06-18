@@ -1,0 +1,122 @@
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $unit__medium;
+
+  &__title {
+    font-size: $unit__large;
+    font-weight: 900;
+  }
+}
+
+.items {
+  width: 100%;
+  min-height: 30rem;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+  width: inherit;
+  height: 30rem;
+  perspective: 100rem;
+}
+
+.item-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  height: 30rem;
+  transition: all 1s;
+  backface-visibility: hidden;
+  transform: rotateY(0);
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item:hover .item-image-container {
+  transform: rotateY(-180deg);
+}
+
+.item:hover .item-detail {
+  transform: rotateY(0);
+}
+
+.item-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $unit__normal;
+  text-align: center;
+  line-height: 1.6;
+  width: 30rem;
+  height: 30rem;
+  background: rgba($color__dark, 0.8);
+  padding: $unit__submedium;
+  transform: rotateY(180deg);
+  transition: all 1s;
+  backface-visibility: hidden;
+
+  &__category {
+    color: darken($color: $color__light, $amount: 40%);
+  }
+
+  &__title {
+    color: $color__light;
+    font-size: $unit__submedium;
+  }
+
+  &__price {
+    color: $color__primary;
+    font-size: $unit__submedium;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+
+    &:link,
+    &:visited {
+      color: $color__primary;
+    }
+
+    &:hover,
+    &:active {
+      color: $color__light;
+    }
+  }
+}
+
+.item__link {
+  display: block;
+  margin: $unit__normal auto;
+  padding: $unit__normal $unit__huge;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+
+  &:link,
+  &:visited {
+    border: 2px solid $color__dark;
+  }
+
+  &:hover,
+  &:active {
+    background: $color__primary;
+    border: 2px solid $color__primary;
+    color: $color__light;
+  }
+}
