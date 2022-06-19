@@ -1,0 +1,54 @@
+.section-footer {
+  position: relative;
+}
+
+.footer {
+  margin: $unit__huge auto;
+}
+
+.footer::before {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background: radial-gradient(rgba($color__dark, 0.5), rgba($color__dark, 0.1));
+  margin: $unit__huge auto;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.art,
+.personal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $unit__large;
+}
+
+.attribution {
+  margin-top: $unit__huge;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.attribution__link {
+  padding: $unit__small;
+  display: inline-block;
+  transition: all 0.3s;
+
+  &:link,
+  &:visited {
+    background: $color__primary;
+    color: $color__light;
+  }
+
+  &:hover,
+  &:active {
+    background: $color__dark;
+    transform: scale(1.1) translate(5px, -2px) skewY(-5deg);
+  }
+}

@@ -312,4 +312,133 @@
   right: 0;
 }
 
-/* SECTION STORE */
+/* SOCIAL MEDIA SECTION */
+.section-social {
+  width: 100%;
+  height: 70rem;
+  position: relative;
+  margin: $unit__small auto;
+  padding: $unit__large 0;
+  perspective: 4000rem;
+}
+
+.social-bg {
+  top: -10%;
+  right: -15%;
+}
+
+.social-media__title {
+  text-align: center;
+  font-size: $unit__large;
+  font-weight: 900;
+  margin: $unit__huge auto;
+}
+
+.signup {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $unit__large;
+  transform: scale(0.5) skewY(-5deg) translateX(-40rem);
+  transition: all 0.7s ease-in-out;
+  z-index: 0;
+
+  &:hover {
+    transform: scale(1) skewX(0) translateX(0);
+    z-index: 1;
+    & + .social-medias {
+      opacity: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        rgba($color__primary, 0.9),
+        rgba($color__primary, 0.6)
+      ),
+      url("../assets/featured-image-bg.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  &__title {
+    color: $color__light;
+    font-size: $unit__submedium;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 200%;
+      height: 2px;
+      transform: translate(-25%, 5rem);
+      background: radial-gradient(
+        rgba($color__light, 0.5),
+        rgba($color__light, 0.1)
+      );
+    }
+  }
+
+  &__link {
+    margin-top: $unit__huge;
+    padding: $unit__submedium $unit__gigantic;
+    font-size: $unit__submedium;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    &:link,
+    &:visited {
+      border: 2px solid $color__light;
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      background: $color__dark;
+      border: 2px solid $color__dark;
+    }
+  }
+}
+
+.social-medias {
+  position: absolute;
+  width: 100%;
+  height: 40rem;
+  top: 20rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $unit__large;
+  background: $color__dark;
+  transform: scale(0.5) skewY(5deg) translate(50rem, 10rem);
+
+  transition: all 0.7s ease-in-out;
+
+  &:hover {
+    transform: scale(1) skewX(0);
+  }
+}
+
+.svg-social-icon {
+  width: 8rem;
+  height: 8rem;
+  fill: darken($color: $color__light, $amount: 50%);
+  stroke: darken($color: $color__light, $amount: 50%);
+  transition: all 0.3s;
+
+  &:hover {
+    fill: darken($color: $color__light, $amount: 0);
+    stroke: darken($color: $color__light, $amount: 0);
+  }
+}
